@@ -1,6 +1,5 @@
 gitplug
 =======
-### Development will not be continued. Feel free to fork and upgrade.
 
 
 git plugin for ranger file manager.
@@ -18,10 +17,10 @@ make install
 * ```:git clone <url>```
 * ```:git add <file>```
 * ```:git rm <file>```
-* ```:git restore <file>``` 
+* ```:git restore <file>```
 * ```:git remote add/rm <name> <url>```
 * ```:git push```
-* ```:git commit <text>``` 
+* ```:git commit <text>```
 
 #### TODO:
 - [x] ```:git push```

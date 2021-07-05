@@ -4,7 +4,7 @@ from ranger.api.commands import Command
 
 class git(Command):
 
-    commands = 'init status clone add rm restore commit remote push switch checkout'.split()
+    commands = 'init status clone add rm restore commit remote push switch checkout tree'.split()
 
 
     def execute(self):
@@ -135,3 +135,8 @@ class git(Command):
 
             subprocess.run(["git", "checkout", self.arg(2)])
             return self.fm.notify("Successfully switched")
+
+        # tree
+        if self.arg(1) == self.commands[11]:
+            subprocess.run(["git", "log", "--graph", "--abbrev-commit",
+                "--decorate", "--date=relative", "--format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'", "--all"])

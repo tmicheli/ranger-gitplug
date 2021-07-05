@@ -21,9 +21,10 @@ make install
 * ```:git remote add/rm <name> <url>```
 * ```:git push```
 * ```:git commit <text>```
+* ```:git commit```
+* ```:git switch <branch>```
+* ```:git checkout {,-b} <branch>```
 
 #### TODO:
-- [x] ```:git push```
-- [x] ```:git remote```
 - [ ] tabbing
 - [ ] _something more i think_

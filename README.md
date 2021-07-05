@@ -24,6 +24,7 @@ make install
 * ```:git commit```
 * ```:git switch <branch>```
 * ```:git checkout {,-b} <branch>```
+* ```:git tree```
 
 #### TODO:
 - [ ] tabbing
